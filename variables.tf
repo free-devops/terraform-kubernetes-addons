@@ -34,6 +34,12 @@ variable "externalsecrets" {
   default     = {}
 }
 
+variable "pusher_wave" {
+  description = "Customize pusher-wave, see `pusher-wave.tf` for supported values"
+  type        = any
+  default     = {}
+}
+
 variable "priority_class" {
   description = "Customize a priority class for addons"
   type        = any

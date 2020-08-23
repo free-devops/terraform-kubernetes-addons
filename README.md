@@ -14,6 +14,7 @@ Follows clusterfrak-dynamics [terraform-kubernetes-addons](https://github.com/cl
   * [kubernetes-external-secrets](https://github.com/godaddy/kubernetes-external-secrets.git): external secret management systems
   * [filebeat](https://github.com/elastic/beats.git): open source file harvester
   * [metricbeat](https://github.com/elastic/beats.git): Metricbeat fetches a set of metrics
+  * [wave/pusher](https://github.com/pusher/wave.git): Kubernetes configuration tracking controller
 
 ## Requirements
 
@@ -62,6 +63,7 @@ Some addons interface with AWS API, for example:
 |------|-------------|------|---------|:-----:|
 | aws | AWS provider customization | `any` | `{}` | no |
 | external-secrets | Customize external-secrets chart, see `external-secrets.tf` for supported values | `any` | `{}` | no |
+| pusher-wave | Customize external-secrets chart, see `pusher-wave.tf` for supported values | `any` | `{}` | no |
 | filebeat | Customize filebeat chart, see `filebeat.tf` for supported values | `any` | `{}` | no |
 | metricbeat | Customize external-secrets chart, see `metricbeat.tf` for supported values | `any` | `{}` | no |
 
