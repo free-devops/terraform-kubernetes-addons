@@ -28,7 +28,7 @@ Follows clusterfrak-dynamics [terraform-kubernetes-addons](https://github.com/cl
 
 User guides, feature documentation and examples are available [here](https://clusterfrak-dynamics.github.io/teks/)
 
-## IAM permissions
+## IAM permissionsww
 
 This module can use either [IRSA](https://aws.amazon.com/blogs/opensource/introducing-fine-grained-iam-roles-service-accounts/) which is the recommanded method or [Kiam](https://github.com/uswitch/kiam).
 
