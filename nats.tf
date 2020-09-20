@@ -10,11 +10,11 @@ locals {
       chart_version             = "4.5.4"
       version                   = "2.1.8"
       skip_crds                 = true
-      recreate_pods             = true
+      recreate_pods             = false
       auth_enabled              = false
       maxConnections            = 100
       maxControlLine            = 512
-      maxPayload                = 100000
+      maxPayload                = 10000000
       writeDeadline             = "2s"
       replicaCount              = 1
     },
