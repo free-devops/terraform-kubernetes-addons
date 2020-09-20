@@ -34,6 +34,12 @@ variable "externalsecrets" {
   default     = {}
 }
 
+variable "nats" {
+  description = "Customize bitnami nats chart, see `nats.tf` for supported values"
+  type        = any
+  default     = {}
+}
+
 variable "pusher_wave" {
   description = "Customize pusher-wave, see `pusher-wave.tf` for supported values"
   type        = any
