@@ -83,7 +83,7 @@ module "iam_assumable_role_externalsecret" {
   create_role                   = local.externalsecrets["enabled"] && local.externalsecrets["create_iam_resources_irsa"]
   role_name                     = "tf-eks-${var.cluster-name}-externalsecrets-irsa"
   provider_url                  = replace(var.eks["cluster_oidc_issuer_url"], "https://", "")
-  role_policy_arns              = local.externalsecrets["create_iam_resources_irsa"] ? [aws_iam_policy.externalsecrets[0].arn] : []
+  role_policy_arns              = local.externalsecrets["enabled"] && local.externalsecrets["create_iam_resources_irsa"] ? [aws_iam_policy.externalsecrets[0].arn] : []
   oidc_fully_qualified_subjects = ["system:serviceaccount:${local.externalsecrets["namespace"]}:${local.externalsecrets["service_account_name"]}"]
 }
 

@@ -8,7 +8,7 @@ locals {
       repository                = "https://charts.bitnami.com/bitnami/"
       enabled                   = false
       chart_version             = "4.5.4"
-      version                   = "2.1.8"
+      version                   = "2.1.8-debian-10-r12"
       skip_crds                 = true
       recreate_pods             = false
       auth_enabled              = false
