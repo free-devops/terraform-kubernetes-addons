@@ -22,6 +22,12 @@ variable "metricbeat" {
   default     = {}
 }
 
+variable "kube-state-metrics" {
+  description = "Customize kube-state-metrics chart, see `kube-state-metrics.tf` for supported values"
+  type        = any
+  default     = {}
+}
+
 variable "filebeat" {
   description = "Customize filebeat chart, see `filebeat.tf` for supported values"
   type        = any
